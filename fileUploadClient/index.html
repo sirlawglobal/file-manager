@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Background from Image | remove.bg</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left_container">
+
+      <video width="350" autoplay muted loop>
+        <source src="./asset/images/bg_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video_text">
+        <p>Remove Image Background</p>
+        <span>100% Automatically and</span>
+        <span class="style_span">Free</span>
+      </div>
+
+    </div>
+
+    
+    <div class="right_container">
+      <div class="upload_ctn">
+        <form action="">
+          <label for="file-input">
+            <span class="upload-btn">Upload Images</span>
+          </label>
+          <input type="file" id="file-input" accept="image/*" onchange="onFileSelect(event)" style="display: none;" multiple="">
+        </form>
+        <p>or drop a file,</p>
+        <p>paste image or URL</p>
+      </div>
+      <div id="image-container"></div>
+    </div>
+  </div>
+  <script src="./asset/js/server.js"></script>
+</body>
+</html>
+
+
+
